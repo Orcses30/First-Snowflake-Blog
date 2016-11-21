@@ -1,0 +1,30 @@
+<%= form_for @article do |f| %>
+
+  <% if @article.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        Your <%= pluralize(@article.errors.count, "error") %> screwed up this article...
+      </h2>
+      <ul>
+        <% @article.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= f.label :'Bad ass title' %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :'Bad ass text' %><br>
+    <%= f.text_area :text %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>

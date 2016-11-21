@@ -1,0 +1,21 @@
+<h1>Listing Bad Ass Articles Here</h1>
+
+<%= link_to 'Start something super cool', new_article_path %>
+<p> <p>
+<table>
+  <tr>
+    <th>Bad Ass Title</th>
+    <th>Bad Ass Text</th>
+    <th colspan="2"></th>
+  </tr>
+
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.text %></td>
+      <td><%= link_to 'Show me that bad ass article', article_path(article) %></td>
+      <td><%= link_to 'You screwed up...now fix it', edit_article_path(article) %></td>
+      <td><%= button_to 'Get this out of my site', article_path(article), method: :delete, data: { confirm: 'You sure Bro?' } %></td>
+    </tr>
+  <% end %>
+</table>

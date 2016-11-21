@@ -1,0 +1,15 @@
+<p>
+  <strong>Snowflake:</strong>
+  <%= comment.commenter %>
+</p>
+
+<p>
+  <strong>Dribble:</strong>
+  <%= comment.body %>
+</p>
+
+<p>
+  <%= link_to 'Destroy this dribble', [comment.article, comment],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
