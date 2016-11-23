@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * We have codefish now!!
+
+* We can push directly to Heroku now
