@@ -24,3 +24,5 @@ Things you may want to cover:
 * We have codefish now!!
 
 * We can push directly to Heroku now
+
+*And have a production branch
