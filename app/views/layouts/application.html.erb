@@ -7,30 +7,29 @@
     <%= javascript_include_tag 'application' %>
   </head>
 
-  <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
+  <body class="container-fluid">
+    <header>
+      <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
             <%= link_to 'Go back to scrub welcome page', controller: 'welcome' %>
-          </ul>
-        </nav>
-      </div>
-
+          </li>
+        </ul>
+        </div>
+      </nav>
     </header>
-    <div class="container">
-    </div>
-    <%= yield %>
-    <div class="container">
+
+    <div class="main">
+      <%= yield %>
     </div>
 
-    <div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-12 bg-green">
-      <%= image_tag('disney/disney-everest.jpg', class: 'img-responsive center-block') %>
+    <div class="row">
+      <div class="col-sm-12 bg-green">
+        <%= image_tag('disney/disney-everest.jpg', class: 'img-responsive center-block') %>
+      </div>
     </div>
-  </div>
-</div>
+
   </body>
 
 </html>
