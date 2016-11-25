@@ -1,28 +1,14 @@
-# README
+# README for "First Snowflake Blog"
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## CI Server
+- Provider: Codeship
+- Project: 186535
+- URL: https://app.codeship.com/projects/186535
 
-Things you may want to cover:
+## Production Server
+- Provider: Heroku
+- App: enigmatic-beyond-67839
+- URL: https://dashboard.heroku.com/apps/enigmatic-beyond-67839
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* We have codefish now!!
-
-* We can push directly to Heroku now
-
-*And have a production branch
+## Github Repo
+- URL: https://github.com/Orcses30/First-Snowflake-Blog
